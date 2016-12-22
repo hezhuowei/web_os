@@ -11,8 +11,8 @@ public partial class read : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string strconn = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True";
-        SqlConnection conn = new SqlConnection(strconn);
+       
+        SqlConnection conn = new SqlConnection(ASP.global_asax.strconn);
         conn.Open();
         string sql = "select * from test";
         SqlCommand cmd = new SqlCommand(sql, conn);

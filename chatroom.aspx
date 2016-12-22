@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
         <div class="container">
             <div class="row clearfix">
-                <div class="col-md-8 column">
+                <div class="col-md-9 column">
                     <div class="row clearfix">
                         <div class="col-md-12 column">
                             <div class="panel panel-default">
@@ -37,11 +37,12 @@
 
                    
                 </div>
-                <div class="col-md-4 column">
+                <div class="col-md-3 column">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <div class="well" style="height: 140px; text-align: center">
+                            <div class="well" style="text-align: center">
                                 <img src="img/445259.jpg" class="img-thumbnail" width="150" />
+                                <div>name</div>
                             </div>
                             <div class="well" style="height: 285px;">
                                 <ul>

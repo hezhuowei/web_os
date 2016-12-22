@@ -14,8 +14,8 @@ public partial class login : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        string strconn = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True";
-        SqlConnection conn = new SqlConnection(strconn);
+        
+        SqlConnection conn = new SqlConnection(ASP.global_asax.strconn);
         conn.Open();
         string sql = "select count(*) from login where Email='"+TextBox1.Text+"'and userPassword='"+TextBox2.Text+"'";
         SqlCommand cmd = new SqlCommand(sql, conn);

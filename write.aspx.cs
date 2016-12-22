@@ -18,8 +18,8 @@ public partial class _Default : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
        
-        string strconn="Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True";
-        SqlConnection conn = new SqlConnection(strconn);
+        
+        SqlConnection conn = new SqlConnection(ASP.global_asax.strconn);
         conn.Open();
         string sql = "INSERT INTO test (text) VALUES ('" + HiddenField1.Value + "')";
         SqlCommand cmd = new SqlCommand(sql, conn);

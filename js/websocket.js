@@ -1,6 +1,6 @@
 ﻿var ws_url = "ws://localhost:53825/Handler.ashx"
 var ws = new WebSocket(ws_url);  //测试用的用户名，目前写死
-var msg_username = "test_user";
+var msg_username = document.getElementById("chat_uname").innerHTML;
 ws.onopen = function () {
     document.getElementById("chat_log").innerHTML += "<p class=\"text_error\"><font color=\"#273 \">Server message:&nbsp</font>连接成功</p>";
     var msg = { "name": msg_username, "msg_text": "##加入聊天室" };

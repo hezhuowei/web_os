@@ -10,7 +10,8 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-       
+       if(Request.Cookies["userName"]!=null)
+        { chat_uname.Text = Request.Cookies["userName"].Value; }
     }
    
 }

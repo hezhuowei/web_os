@@ -42,7 +42,7 @@
                         <div class="panel-body">
                             <div class="well" style="text-align: center">
                                 <img src="img/445259.jpg" class="img-thumbnail" width="150" />
-                                <div>name</div>
+                                <asp:Label ID="chat_uname" runat="server" Text="guest"></asp:Label>
                             </div>
                             <div class="well" style="height: 285px;">
                                 <ul>

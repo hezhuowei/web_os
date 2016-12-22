@@ -18,7 +18,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="well">
-                                        <div id="chat_log" class="text-info" style="height: 350px; overflow: auto;scroll">
+                                        <div id="chat_log" class="text-info" style="height: 350px; overflow: auto;">
                                             
                                         </div>
                                     </div>

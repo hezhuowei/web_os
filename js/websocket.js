@@ -1,4 +1,4 @@
-﻿var ws_url = "ws://localhost:51780/Handler.ashx"
+﻿var ws_url = "ws://localhost:53825/Handler.ashx"
 var ws = new WebSocket(ws_url);  //测试用的用户名，目前写死
 var msg_username = "test_user";
 ws.onopen = function () {

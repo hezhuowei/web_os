@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
                    
 <div class="container">
-	<div class="row clearfix">
+	<div class="row clearfix" style="margin-top:10px">
 		<div class="col-md-12 column">
              <%=abc %>
 		</div>

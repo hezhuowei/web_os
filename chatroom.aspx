@@ -46,9 +46,9 @@
                             </div>
                             <div class="well" style="height: 285px;">
                                 <ul>
-                                    <li>tese1
+                                    <li>
                                     </li>
-                                    <li>test2
+                                    <li>
                                     </li>
                                 </ul>
                             </div>

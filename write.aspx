@@ -20,7 +20,6 @@
 			<textarea id="textarea1" style="height:200px;"><p>请输入内容...</p></textarea>
 			<div class="btn-group">
                  <div style="margin-top:15px;text-align:center;">
-                    
                      <asp:Button ID="btn1" class="btn btn-default"  runat="server" OnClick="Button1_Click" Text="提交" />
                  </div>
     <script type="text/javascript">

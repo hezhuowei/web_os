@@ -15,7 +15,7 @@ public partial class register : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        
+       
         SqlConnection conn = new SqlConnection(ASP.global_asax.strconn);
         conn.Open();
         string sql = "INSERT INTO login (Email,userName,userPassword) VALUES ('"+tbEmail.Text+"','"+tbUsername.Text+"','"+userPassword.Text+"')";

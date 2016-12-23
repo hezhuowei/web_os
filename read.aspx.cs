@@ -11,7 +11,7 @@ public partial class read : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-       
+        
         SqlConnection conn = new SqlConnection(ASP.global_asax.strconn);
         conn.Open();
         string sql = "select * from test";

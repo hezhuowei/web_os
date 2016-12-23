@@ -2,7 +2,7 @@
 
 <script runat="server">
 
-    public static string strconn = "Data Source=DESKTOP-6KTN9VL;Initial Catalog=APP_DATA;Integrated Security=True";
+    public static string strconn = "Data Source=DESKTOP-6KTN9VL;Initial Catalog=test;Integrated Security=True";
     void Application_Start(object sender, EventArgs e) 
     {
         // 在应用程序启动时运行的代码

@@ -6,85 +6,51 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            text-align: center;
-        }
-        .auto-style2 {
-            width: 1032px;
-            height: 177px;
-            margin-bottom: 72px;
-        }
-        .auto-style4 {
-            text-align: left;
-        }
-        .auto-style5 {
-            text-align: right;
-            width: 515px;
-        }
-        .auto-style8 {
-            text-align: left;
-            width: 515px;
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-image:url("img/abstract-red-white-background-simple-1280x720.jpg");
         }
     </style>
-</head>
+    </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-        <asp:Panel ID="Panel1" runat="server" Height="315px">
-            <div class="auto-style1">
-                <br />
-                <table class="auto-style2">
-                    <tr>
-                        <td class="auto-style5">
-                            <asp:Label ID="Label1" runat="server" Text="邮箱："></asp:Label>
-                        </td>
-                        <td class="auto-style8">
-                            <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-                      <tr>
-                        <td class="auto-style5">
-                            <asp:Label ID="Label4" runat="server" Text="用户名："></asp:Label>
-                        </td>
-                        <td class="auto-style8">
-                            <asp:TextBox ID="tbUsername" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style5">
-                            <asp:Label ID="Label2" runat="server" Text="密码："></asp:Label>
-                        </td>
-                        <td class="auto-style8">
-                            <asp:TextBox ID="userPassword" runat="server" TextMode="Password"></asp:TextBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style5">
-                            <asp:Label ID="Label3" runat="server" Text="确认密码："></asp:Label>
-                        </td>
-                        <td class="auto-style8">
-                            <asp:TextBox ID="tbUserpassword_again" runat="server" TextMode="Password"></asp:TextBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <asp:Button ID="bntRister" runat="server" OnClick="Button1_Click" Text="注册" />
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                &nbsp;</div>
-        </asp:Panel>
-    
-    </div>
-    </form>
+        <div class="container">
+	       <div class="row clearfix">
+               <br /><br />
+               <div class="page-header" style="text-align: center;">
+				<h1>
+					Web OS &nbsp;&nbsp;<small>感谢您的注册！</small>
+				</h1>
+			</div>
+               
+		      <center>
+                  <div class="input-group input-group-lg" style="width:500px;margin-top:20px;">
+                     <span class="input-group-addon">邮箱</span>
+                     <asp:TextBox ID="tbEmail" runat="server" placeholder="Email" CssClass="form-control"></asp:TextBox>
+                  </div>
+
+                  <div class="input-group input-group-lg" style="width:500px;margin-top:20px;">
+                      <span class="input-group-addon">名字</span>
+                      <asp:TextBox ID="tbUsername" runat="server" placeholder="Username" CssClass="form-control"></asp:TextBox>
+                  </div>
+
+                  <div class="input-group input-group-lg" style="width:500px;margin-top:20px;">
+                      <span class="input-group-addon">密码</span>
+                      <asp:TextBox ID="userPassword" runat="server"  placeholder="Password" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                  </div>          
+                            
+                   <div class="input-group input-group-lg" style="width:500px;margin-top:20px;">
+                       <span class="input-group-addon" >确认</span> 
+                       <asp:TextBox ID="tbUserpassword_again" runat="server"  placeholder="Password"  CssClass="form-control" TextMode="Password" style="margin-top: 0px"></asp:TextBox>
+                   </div> 
+                     <asp:Button ID="bntRister" runat="server" CssClass="btn btn-default" OnClick="Button1_Click" Text="注册" style="margin-top:20px;width:500px;height:46px;border-radius:6px;color: #555;font-size:20px"/>
+		      </center>
+	       </div>
+        </div>
+                           
+      </form>
 </body>
 </html>

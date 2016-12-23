@@ -17,7 +17,7 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-       
+
         
         SqlConnection conn = new SqlConnection(ASP.global_asax.strconn);
         conn.Open();

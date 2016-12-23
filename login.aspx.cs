@@ -23,7 +23,6 @@ public partial class login : System.Web.UI.Page
         if(result>0)
         {
             
-            
             //写入Cookies
             string allsql = "select * from login where Email='" + TextBox1.Text + "'and userPassword='" + TextBox2.Text + "'";
             SqlCommand allcmd = new SqlCommand(allsql, conn);
@@ -38,15 +37,18 @@ public partial class login : System.Web.UI.Page
                 Response.Cookies["userName"].Value = dr["userName"].ToString();
                 Response.Cookies["userName"].Expires = DateTime.Now.AddHours(1);
             }
+            Response.Write("<script>alert('登录成功')</script>");
+            Response.Redirect("index.html");
             dr.Close();
         }
+
         else
         {
             Response.Write("<script>alert('登录失败')</script>");
         }
 
         //读取Cookies
-    /*    if (Request.Cookies["Email"] != null && Request.Cookies["userId"] != null && Request.Cookies["userName"] != null)
+       /* if (Request.Cookies["Email"] != null && Request.Cookies["userId"] != null && Request.Cookies["userName"] != null)
         {
 
             Response.Write(Request.Cookies["Email"].Value);
